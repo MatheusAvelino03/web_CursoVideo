@@ -1,0 +1,270 @@
+/*FORMAÇÃO DE TEXTO*/
+@charset "UTF-8";
+
+@font-face {
+    font-family: "fontelogo";
+    src: url("../_fonts/bubblegum-sans-regular");
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #dddddd;
+
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/*FORMATAÇÃO DA DIV*/
+div#interface {
+    width: 1000px;
+    background-color: #ffffff;
+    margin: -25px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1020px;
+    top: 60px;
+
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+
+
+header#cabecalho h1 {
+    font-family: sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+
+
+}
+
+header#cabecalho h2 {
+    font-family: sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+
+/*FORMATAÇÃO DE IMAGENS COM LEGENDA */
+/*O ponto serve com um padrão de referência uma classe*/
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/*----------------------------------------------*/
+
+/*FORMATAÇÃO DO MENU*/
+
+nav#menu {
+    display: block;
+}
+
+section#corpo {
+    display: block;
+    width: 550px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 22px;
+    padding-bottom: 15px;
+}
+
+header#cabecalho-artigo h1.font {
+    font-family: sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin: 0px 0px 0px 0px;
+}
+
+header#cabecalho-artigo h2.menor {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px 0px 0px 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 10pt;
+    color: #606060;
+
+}
+
+article#noticia-principal h2 {
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+
+}
+
+.direita {
+
+    margin: -8px 0px -8px 0px;
+    text-align: right;
+    font: 8pt;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+/*METODO USADO DE CLASSE - PARA poder especificar um estilo para cada tag especifica dentro de outra*/
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+
+}
+
+/*Estilo do menu lateral*/
+aside#menulateral {
+    display: block;
+    width: 400px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/*Menu lateral h1*/
+aside#menulateral h1 {
+    font-family: sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+
+}
+
+/*Menu lateral h2*/
+aside#menulateral h2 {
+    background-color: #606060;
+    font-size: 15pt;
+    color: #ffffff;
+
+}
+
+/*Estilo do rodapé*/
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+
+}
+
+/*Estilo paragrafo do rodapé*/
+footer#rodape p {
+    text-align: center;
+}
+
+/*Sempre que tiver "id", usar -> [ # ]*/
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 520px;
+    transition: opacity 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    /*PADDING - USADO PRA DAR ESPAÇO DENTRO DELE*/
+    padding: 10px;
+    margin: 2px
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: #ffffff;
+}

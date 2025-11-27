@@ -1,0 +1,32 @@
+@charset "UTF-8"
+
+/*Estilo das mideas*/
+div#tv--radio {
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background-color: aqua;
+}
+
+div#radio-tv {
+    width: 900px;
+    height: 580px;
+    margin: auto;
+
+}
+
+audio#musica {
+    display: block;
+    position: relative;
+    left: 623px;
+    top: -92px;
+    width: 300px;
+}
+
+video#filme {
+    display: block;
+    position: relative;
+    left: 115px;
+    top: -520px;
+    width: 480px;
+}
